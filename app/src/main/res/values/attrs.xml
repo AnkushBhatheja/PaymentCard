@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PaymentCard">
+        <attr name="backgroundColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="primayColor" format="color" />
+        <attr name="cardHolder" format="string"></attr>
+        <attr name="cardNumber" format="string"></attr>
+        <attr name="cardExpiry" format="string"></attr>
+        <attr name="cardCVV" format="string"></attr>
+    </declare-styleable>
+</resources>

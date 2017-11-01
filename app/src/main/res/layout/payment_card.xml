@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/llCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/payment_card_border"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Card Holder Name"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/etCardHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:background="#ffffff"
+                android:ellipsize="end"
+                android:inputType="textCapCharacters"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/font_size_normal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".55">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Exp. Date"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etExpriy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="#ffffff"
+                    android:hint="01/29"
+                    android:maxLength="5"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="@dimen/font_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_weight=".45">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="CVV/CVC"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etCVV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="#ffffff"
+                    android:hint="***"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="@dimen/font_size_normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="#ffffff"
+            android:drawableEnd="@drawable/debit_card"
+            android:ellipsize="end"
+            android:hint="Card Number"
+            android:inputType="numberDecimal"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_color"
+            android:textSize="16dp" />
+
+
+        <CheckBox
+            android:id="@+id/cbDefault"
+            android:text="Set as default"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:buttonTint="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>
